@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--color-white);
+  padding: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  padding: 1.25em;
+  border-top: 0.125em solid rgb(235, 232, 232);
+  gap: 1em;
+}
+
+th {
+  background-color: rgb(235, 232, 232);
+  height: 3.125em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+.icon-edit {
+  display: flex;
+  gap: 0.313em;
+  cursor: pointer;
+}
+
+.icon-delete {
+  display: flex;
+  gap: 0.313em;
+  cursor: pointer;
+}

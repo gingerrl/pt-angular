@@ -1,0 +1,98 @@
+<mat-dialog-content class="mat-typography">
+  <div class="title-content">
+    <h1 *ngIf="isCreate">Registrar usuario</h1>
+    <h1 *ngIf="!isCreate">Actualizar usuario</h1>
+    <mat-icon
+      mat-dialog-close
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="close"
+      class="icon-pointer"
+    ></mat-icon>
+  </div>
+
+  <hr />
+  <form class="form-content" [formGroup]="form">
+    <div>
+      <mat-form-field>
+        <mat-label>Select</mat-label>
+        <mat-select formControlName="department">
+          <mat-option
+            *ngFor="let item of selectDepart"
+            value="{{ item.nameDepa }}"
+            >{{ item.nameDepa }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field>
+        <mat-label>Select</mat-label>
+        <mat-select formControlName="post">
+          <mat-option *ngFor="let item of selectPost" [value]="item.namePost"
+            >{{ item.namePost }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Usuario:</mat-label>
+        <input matInput formControlName="user" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email:</mat-label>
+        <input type="email" matInput formControlName="email" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Primer Nombre:</mat-label>
+        <input matInput formControlName="firstName" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Segundo Nombre:</mat-label>
+        <input matInput formControlName="middleName" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Primer Apellido:</mat-label>
+        <input matInput formControlName="firstSurname" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Segundo Apellido:</mat-label>
+        <input matInput formControlName="secondLastName" />
+      </mat-form-field>
+    </div>
+  </form>
+
+  <div class="button-content">
+    <button
+      class="button-register"
+      *ngIf="isCreate"
+      [mat-dialog-close]="showModalClose"
+      (click)="onListAdd()"
+    >
+      Registrar
+    </button>
+
+    <button
+      class="button-register"
+      *ngIf="!isCreate"
+     [mat-dialog-close]="showModalClose"
+      (click)="onListUpdate()"
+    >
+      Actualizar
+    </button>
+
+    <button class="button-cancel" [mat-dialog-close]="showModalClose" >Cancelar</button>
+  </div>
+</mat-dialog-content>

@@ -1,0 +1,9 @@
+<mat-dialog-content>
+  ¿Estas seguro de eliminar el producto
+  {{ data.firstName + "" + data.firstSurname }}?
+  <hr />
+  <div class="button-content">
+    <button class="button-confirm" mat-dialog-close (click)="onButtonConfirm()">Aceptar</button>
+    <button mat-button mat-dialog-close>Cancelar</button>
+  </div>
+</mat-dialog-content>

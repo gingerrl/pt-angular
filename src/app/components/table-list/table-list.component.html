@@ -1,0 +1,54 @@
+<div class="container table">
+  <table>
+    <tr>
+      <th>Usuario</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Departamento</th>
+      <th>Cargo</th>
+      <th>Email</th>
+      <th>Acciones</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let item of listProduct">
+      <td>{{ item.user }}</td>
+      <td>{{ item.firstName + " " + item.middleName }}</td>
+      <td>{{ item.firstSurname + " " + item.secondLastName }}</td>
+      <td>{{ item.department }}</td>
+      <td>{{ item.post }}</td>
+      <td>{{ item.email }}</td>
+
+      <td>
+        <span class="dropdown">
+          <div class="button-content">
+            <div class="icon-edit" (click)="onButtonEdit(item)">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                fontIcon="edit_square"
+              ></mat-icon>
+              <mat-label>Editar</mat-label>
+            </div>
+            <div class="icon-delete" (click)="onButtonDelete(item)">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                fontIcon="delete"
+              ></mat-icon>
+              <mat-label>Eliminar</mat-label>
+            </div>
+          </div>
+        </span>
+      </td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <div>{{ listProduct.length }} Resultados</div>
+    <select name="select" (change)="onDropDown($event)">
+      <option value="5" selected>5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.text-content {
+    font-weight: bold;
+    align-items: center;
+}
+
+.button-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.25em;
+    height: 2.813em;
+
+}
+
+.button-cancel {
+  border: 0em;
+  background-color: var(--color-whisper);
+  border-radius: 0.375em;
+  cursor: pointer;
+  width: 20%;
+  color: var(--color-gray);
+}
+
+.button-confirm {
+  border: 0em;
+  background-color:var(--color-blue);
+  border-radius: 0.375em;
+  cursor: pointer;
+  width: 20%;
+  color: var(--color-white);
+}
+
+hr {
+    margin-top: 5em;
+}
