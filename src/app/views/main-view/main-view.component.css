@@ -1,0 +1,27 @@
+.container {
+    margin: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.938em;
+}
+
+.header-content input {
+    padding-left: 0.625em;
+    height: 1.875em;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+    align-self: center;
+}
+
+.button-add {
+    color: var(--color-black);
+    background-color: var(--color-whisper);
+    padding: 0.938em;
+    border: 0px;
+    border-radius: 0.375em;
+    cursor: pointer;
+    font-weight: bold;
+}

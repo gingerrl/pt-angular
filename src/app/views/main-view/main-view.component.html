@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="header-content">
+    <h1>Administración de usuarios</h1>
+    <button class="button-add" (click)="onButtonAdd()">
+      Crear nuevo usuario
+    </button>
+  </div>
+  <app-table-list
+    [dataList]="dataListFilter"
+    (listEvent)="onListProduct()"
+  ></app-table-list>
+</div>
