@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "4401fdb1290d9",
+      "user": "gromolea",
+      "firstName": "Ginger",
+      "middleName": "Katherine",
+      "firstSurname": "Romo",
+      "secondLastName": "Leal",
+      "department": "Technology",
+      "post": "Desarrollador",
+      "email": "gromo@gmail.com"
+    },
+    {
+      "id": "f2f3436f09a31",
+      "user": "nathaly52",
+      "firstName": "Nathaly",
+      "middleName": "Geovanna",
+      "firstSurname": "Palma",
+      "secondLastName": "Teran",
+      "department": "People",
+      "post": "Administrador",
+      "email": "nathaly@gmail.com"
+    },
+    {
+      "id": "0714ca34ba50f",
+      "user": "rsteven01",
+      "firstName": "Ronald",
+      "middleName": "Steven",
+      "firstSurname": "Flores",
+      "secondLastName": "Ramos",
+      "department": "Redes",
+      "post": "Analista de redes",
+      "email": "steven@gmail.com"
+    },
+    {
+      "id": "45ff85585214",
+      "user": "asequera02",
+      "firstName": "Antonio",
+      "middleName": "Luis",
+      "firstSurname": "Sequera",
+      "secondLastName": "Lara",
+      "department": "Marketing",
+      "post": "Analista de marketing",
+      "email": "asquera@gmail.com"
+    },
+    {
+      "id": "f75865d8d85ef",
+      "user": "jfebres",
+      "firstName": "Jorge",
+      "middleName": "Fernando",
+      "firstSurname": "Febres",
+      "secondLastName": "Cordero",
+      "department": "Technology",
+      "post": "Desarrollador",
+      "email": "jfebres@gmail.com"
+    }
+  ]
+}
